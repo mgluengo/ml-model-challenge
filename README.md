@@ -6,10 +6,10 @@
 Given a dataset with information about stores, **build a Machine Learning Model to predict the revenue of other shops of the same brand**.
 
 ### Rules:
-+ :stopwatch: Participants had **6 hours** since the dataset release to complete the full process **(EDA, Modeling, Evaluation)**.
-+ :chart_with_upwards_trend: After the 6h, a new **dataset for validation** with no labels (data about revenues) was released. Participants had **30 min** to apply their models to predict the revenues of the stores in the new dataset and submit their work.
++ :stopwatch: **6 hours** since the dataset release to complete the full process **(EDA, Modeling, Evaluation)**.
++ :chart_with_upwards_trend: After the 6h, a new **dataset for validation** with no labels (sales data) was released. We had **30 min** to apply our models to predict the revenues of the stores in the new dataset and submit our work.
 + :outbox_tray: **Submissions** were individual, and included: 
-  + Output file with the index of the stores in the validation dataset and participants' sales prediction for each store.
+  + Output file with the index of the stores in the validation dataset and our sales prediction for each store.
   + Pickled version of the **model built** and any **feature engineering** steps used. 
 + :white_check_mark: The teaching staff compared the predictions with the real data and communicated the final scores. 
 
@@ -41,7 +41,7 @@ Used Decision Tree Regression model with **Gradient Boosting** (highest scores a
     - **Exloration** (shape, data types, nulls, etc.)
     - Data **cleaning**. The dataset quality was good, so this step went smoothly. Changes included dropping unnecessary columns.
     - **Feature engineering**. Converted DateTime into ordinal values, and used **one-hot-encoding** (created dummies) to convert all categorical into numerical values.
-    - Analysis. Used **visualizatio**n (matplotlib, seaborn) to analyze correlations, find outliers, etc.
+    - Analysis. Used **visualization** (matplotlib, seaborn) to analyze correlations, find outliers, etc.
 3. Prepared data (**feature selection, train/test splitting**).
 4. **Trained and evaluated models**. Being this a regression problem, the following models were tested: **Linear Regression, Decission Tree Regressor, K-Neighbors Regressor, Ridge, Lasso**. The best results were obtained using Decission Trees (score 0.88, no overfitting).
 5. Applied **ensemble methods** to optimize the Decission Tree model (**Random Forest, XGBoost, Gradient Boosting**). Best results achieved with Gradient Boosting (score 0.95, no overfitting).
