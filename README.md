@@ -1,4 +1,4 @@
-# Ironhack Datathon: ML Predictive Model
+![Header](https://raw.githubusercontent.com/mgluengo/ml-model-challenge/master/images/header.png "Header")
 
 ## Challenge
 
